@@ -1,0 +1,259 @@
+/* Réinitialisation des marges et paddings pour certains éléments HTML de base */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, form, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    font: Gotham
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+/* Styles spécifiques pour les différentes pages */
+body.accueil, 
+body.page-entrainement-personnel,
+body.page-cours-de-groupe,
+body.seance-libre,
+body.about,
+body.service,
+body.contact,
+body.tarifs,
+body.form {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+body.accueil {
+    background-image: url(../images/img1.jpg);
+}
+
+body.page-entrainement-personnel {
+    background-image: url(../images/img3.jpg);
+}
+
+body.page-cours-de-groupe {
+    background-image: url(../images/img2.jpg);
+}
+
+body.seance-libre {
+    background-image: url(../images/img4.jpg);
+}
+
+body.about {
+    background-image: url(../images/img5.jpg);
+}
+
+body.service {
+    background-image: url(../images/img6.jpg);
+}
+
+body.contact {
+    background-image: url(../images/img1.jpg);
+}
+
+body.tarifs,
+body.form {
+    background-image: url(../images/img1.jpg);
+}
+
+/* Styles pour les sections communes */
+header, footer, section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Position relative pour le placement correct du pseudo-élément */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(42, 42, 144);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px; /* Ajustez cette valeur selon votre mise en page */
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: #d35400; /* Couleur au survol */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Étend la largeur au survol */
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #d35400;
+}
+
+/* Style du bouton d'inscription */
+.inscription {
+    display: inline-block;
+    background: #d35400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.inscription:hover {
+    color: #fff;
+}
+
+/* Styles pour la section des services */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styles pour les éléments individuels des services */
+.service-item {
+    flex-basis: calc(33.33% - 20px); 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les images à l'intérieur des éléments de service */
+.service-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style du pied de page  */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 10px; 
+}
+.error input, .error select {
+    border: 2px solid red;
+}
+/* Style des erreur */
+.erreur {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+input:focus, select:focus {
+    border: 2px solid #009688;
+}
+.error input, .error textarea {
+    border: 2px solid red;
+}
+
+.erreur {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.error input, .error textarea, .error select {
+    border: 2px solid red;
+}
+/* Style des tarifs */
+
+#tarifs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.tarif {
+    border: 1px solid #ddd;
+    border-radius: 7%;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.tarif:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 12px rgba(255, 253, 253, 0.733);
+}
+
+#bronze {
+    background-color: #CD7F32; /* Bronze */
+}
+
+#argent {
+    background-color: #C0C0C0; /* Silver */
+}
+
+#or {
+    background-color: #FFD700; /* Gold */
+}
+
+.tarif h3 {
+    color: #000; /* Black text color */
+}
+
+.tarif p {
+    color: #000; /* Black text color */
+}
+
+.tarif button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7%;
+    cursor: pointer;
+    transition:  rgb(73, 73, 73) 0.3s ease;
+    display: block;
+    margin: auto; 
+    margin-top: 20px; 
+}
+
+.tarif button:hover {
+    background-color: rgb(107, 105, 103);
+}
+
+.tarif button a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease-out;
+}
