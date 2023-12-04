@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Liaison vers la feuille de style externe , icône du site et javascript -->
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <script src="../js/validationform.js"></script>
+    <script src="../js/reactivite.js"></script>
+    <script src="../js/dynamic.js"></script>
+
+    <!-- Titre de la page -->
+    <title>Cours de groupe - POWER FITNESS</title>
+</head>
+<body class="page-cours-de-groupe">
+     <!-- En-tête de la page -->
+    <header>
+        <h1>Cours de groupe</h1>
+          <!-- Navigation -->
+        <nav>
+            <ul>
+                <!-- Liens de navigation vers différentes pages -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Description du contenu -->
+    <section>
+        <h2>Cours de groupe</h2>
+        <p>Rejoignez nos cours de groupe dynamiques pour vous motiver et vous aider à atteindre vos objectifs de remise en forme en groupe.</p>
+    </section>
+
+    <!-- Section pour réserver un cours -->
+    <section>
+        <h2>Réservez votre séance :</h2>
+        <form action="#" method="post" id="membershipForm" name="form_membership">
+            <fieldset>
+              
+            
+                <!-- NOM -->
+                <p><label for="in_Name">Nom:</label><br>
+                <input type="text" id="in_Name" name="f_Name" /></p>
+            
+                <!-- PRÉNOM -->
+                <p><label for="in_FirstName">Prénom:</label><br>
+                <input type="text" id="in_FirstName" name="f_FirstName" /></p>
+            
+                <!-- EMAIL -->
+                <p><label for="in_Email">Email:</label><br>
+                <input type="email" id="in_Email" name="f_Email" /></p>
+            
+                <!-- NUMÉRO DE TÉLÉPHONE -->
+                <p><label for="in_Phone">Numéro de téléphone:</label><br>
+                <input type="tel" id="in_Phone" name="f_Phone" /></p>
+                
+                <!-- DEMANDE SPECIALE -->
+                <p>
+                <label for="comments">Demandes spéciales :</label><br>
+                <textarea id="comments" name="comments" rows="4" placeholder="Entrez vos demandes ici"></textarea>
+                </p>
+    
+                <!-- DATE DE RESERVATION -->
+                <p>
+                <label for="reservation_date">Date de réservation :</label><br>
+                <input type="date" id="reservation_date" name="reservation_date">
+                </p>
+    
+                <!-- Bouton de soumission du formulaire -->
+                <p>
+                    <input type="submit" value="Réserver un entraînement de groupe">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Copyright et informations sur les créateurs -->
+        <p>&copy; 2023 POWER FITNESS. Tous droits réservés.</p>
+        <p>Créé par Boudiaf Mehdi et Metabteb Abd essalam</p>
+        <p>Date de création : Novembre 2023 </p>
+        <!-- Lien vers le dépôt GitHub -->
+        <a href="https://github.com/mehdibdf3/Power_Fitness_Projet_Web.git">GitHub : Projet Power Fitness sur GitHub</a>
+    </footer>
+    
+
+</body>
+</html>
