@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liaison vers la feuille de style externe , icône du site et javascript -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <script src="../js/validationform.js"></script>
+    <script src="../js/reactivite.js"></script>
+    <script src="../js/dynamic.js"></script>
+    
+    <!-- Titre de la page -->
+   
+    <title>Contact - POWER FITNESS</title>
+</head>
+<body class="contact">
+     <!-- En-tête de la page -->
+    <header>
+        <h1>Contactez POWER FITNESS</h1>
+          <!-- Navigation -->
+        <nav>
+            <ul>
+                <!-- Liens de navigation vers différentes pages -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section de formulaire de contact -->
+    <section>
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question ou préoccupation, n'hésitez pas à nous contacter :</p>
+        
+        <!-- Formulaire de contact -->
+        <form action="#" method="post" id="membershipForm" name="form_membership">
+            <fieldset>
+                <legend>Veuillez compléter vos informations - Tous les champs sont requis</legend>
+            
+                <!-- NOM -->
+                <p><label for="in_Name">Nom:</label>
+                <input type="text" id="in_Name" name="f_Name" /></p>
+            
+                <!-- PRÉNOM -->
+                <p><label for="in_FirstName">Prénom:</label>
+                <input type="text" id="in_FirstName" name="f_FirstName" /></p>
+            
+                <!-- EMAIL -->
+                <p><label for="in_Email">Email:</label>
+                <input type="email" id="in_Email" name="f_Email" /></p>
+            
+                <!-- NUMÉRO DE TÉLÉPHONE -->
+                <p><label for="in_Phone">Numéro de téléphone:</label>
+                <input type="tel" id="in_Phone" name="f_Phone" /></p>
+            
+               <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                </p>
+                <!-- SUBMIT -->
+                <p>
+                    <input type="submit" value="S'inscrire" name="submit" />
+                </p>
+            
+            </fieldset>
+            </form>
+            
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Copyright et informations sur les créateurs -->
+        <p>&copy; 2023 POWER FITNESS. Tous droits réservés.</p>
+        <p>Créé par Boudiaf Mehdi et Metabteb Abd essalam</p>
+        <p>Date de création : Novembre 2023 </p>
+        <!-- Lien vers le dépôt GitHub -->
+        <a href="https://github.com/mehdibdf3/Power_Fitness_Projet_Web.git">GitHub : Projet Power Fitness sur GitHub</a>
+    </footer>
+    
+ 
+</body>
+</html>
+
+

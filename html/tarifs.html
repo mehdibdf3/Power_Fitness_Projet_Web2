@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- Liaison vers la feuille de style externe , icône du site et javascript -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <script src="../js/reactivite.js"></script>
+    <script src="../js/dynamic.js"></script>
+    
+    <!-- Titre de la page -->
+    <title>Tarifs - POWER FITNESS</title>
+</head>
+<body class="tarifs">
+     <!-- En-tête de la page -->
+    <header>
+        <h1>Tarifs</h1>
+          <!-- Navigation -->
+        <nav>
+            <ul>
+                <!-- Liens de navigation vers différentes pages -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu des forfaits -->
+    <section>
+        <h2>Nos Tarifs</h2>
+    </section>
+    
+    <div id="tarifs-container" style="display: flex; justify-content: space-around;">
+        <!-- Forfait Bronze -->
+        <div class="tarif" id="bronze">
+            <h3>Forfait Bronze</h3>
+            <p>Le forfait Bronze vous donne accès à 2 séances par semaine, cependant, il ne comprend pas les cours de groupe ni l'entraînement personnel.</p>
+            <p>Prix : 40$/mois</p>
+            <!-- Bouton pour rediriger vers la page d'inscription -->
+            <button><a href="inscription.html?forfait=bronze">S'inscrire</a></button>
+        </div>
+    
+        <!-- Forfait Argent -->
+        <div class="tarif" id="argent">
+            <h3>Forfait Argent</h3>
+            <p>Le forfait Argent vous donne accès à 4 séances par semaine, y compris les cours de groupe.</p>
+            <p>Prix : 70$/mois</p>
+            <!-- Bouton pour rediriger vers la page d'inscription -->
+            <button><a href="inscription.html?forfait=argent">S'inscrire</a></button>
+        </div>
+    
+        <!-- Forfait Or -->
+        <div class="tarif" id="or">
+            <h3>Forfait Or</h3>
+            <p>Le forfait Or vous donne un accès illimité à la salle, aux cours de groupe et à l'entraînement personnel.</p>
+            <p>Prix : 120$/mois</p>
+            <!-- Bouton pour rediriger vers la page d'inscription -->
+            <button><a href="inscription.html?forfait=or" target="__blank">S'inscrire</a></button>
+        </div>
+    </div>
+    
+  
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Copyright et informations sur les créateurs -->
+        <p>&copy; 2023 POWER FITNESS. Tous droits réservés.</p>
+        <p>Créé par Boudiaf Mehdi et Metabteb Abd essalam</p>
+        <p>Date de création : Novembre 2023 </p>
+        <!-- Lien vers le dépôt GitHub -->
+        <a href="https://github.com/mehdibdf3/Power_Fitness_Projet_Web.git">GitHub : Projet Power Fitness sur GitHub</a>
+    </footer>
+    
+
+</body>
+</html>
