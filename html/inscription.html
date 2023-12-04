@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Liaison vers la feuille de style externe , icône du site et javascript -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <script src="../js//validationform.js"></script>
+    <script src="../js/dynamic.js"></script>
+    <script src="../js/reactivite.js"></script>
+
+    <!-- Titre de la page -->
+    <title>Inscrivez-vous - POWER FITNESS</title>
+</head>
+<body class="form">
+     <!-- En-tête de la page -->
+    <header>
+        <h1>Inscrivez-vous à POWER FITNESS</h1>
+          <!-- Navigation -->
+        <nav>
+            <ul>
+                <!-- Liens de navigation vers différentes pages -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulaire d'inscription -->
+    <section>
+        <h2>Formulaire d'inscription</h2>
+      <!--#### FORMULAIRE D'ADHÉSION ####-->
+<form action="#" method="post" id="membershipForm" name="form_membership">
+    <fieldset>
+        <legend>Veuillez compléter vos informations d'adhésion - Tous les champs sont requis</legend>
+    
+        <!-- NOM -->
+        <p><label for="in_Name">Nom:</label>
+        <input type="text" id="in_Name" name="f_Name" /></p>
+    
+        <!-- PRÉNOM -->
+        <p><label for="in_FirstName">Prénom:</label>
+        <input type="text" id="in_FirstName" name="f_FirstName" /></p>
+    
+        <!-- EMAIL -->
+        <p><label for="in_Email">Email:</label>
+        <input type="email" id="in_Email" name="f_Email" /></p>
+    
+        <!-- NUMÉRO DE TÉLÉPHONE -->
+        <p><label for="in_Phone">Numéro de téléphone:</label>
+        <input type="tel" id="in_Phone" name="f_Phone" /></p>
+    
+        <!-- TYPE D'ADHÉSION -->
+        <p><label for="in_Membership">Type d'adhésion:</label>
+            <select id="in_Membership" name="f_Membership">
+                <option value="bronze">Forfait Bronze</option>
+                <option value="argent">Forfait Argent</option>
+                <option value="or">Forfait Or</option>
+            </select>
+            
+        </p>
+    
+        <!-- SUBMIT -->
+        <p>
+            <input type="submit" value="S'inscrire" name="submit" />
+        </p>
+    
+    </fieldset>
+    </form>
+    
+                
+                
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Copyright et informations sur les créateurs -->
+        <p>&copy; 2023 POWER FITNESS. Tous droits réservés.</p>
+        <p>Créé par Boudiaf Mehdi et Metabteb Abd essalam</p>
+        <p>Date de création : Novembre 2023 </p>
+        <!-- Lien vers le dépôt GitHub -->
+        <a href="https://github.com/mehdibdf3/Power_Fitness_Projet_Web.git">GitHub : Projet Power Fitness sur GitHub</a>
+    </footer>
+
+    <!-- Script pour sélectionner automatiquement le forfait -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const forfaitChoisi = getQueryParam('forfait');
+            if (forfaitChoisi) {
+                const selectElement = document.getElementById('in_Membership');
+                if (selectElement) {
+                    selectElement.value = forfaitChoisi;
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
